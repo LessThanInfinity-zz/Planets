@@ -21,7 +21,9 @@
 		<ul>
 			<li>Detection determined on basis of radius from center</li>
 		</ul>
+	</li>
 	<li>Limited bullets per shot </li>
+</ul>
 
 <p>Feel like trying it out? Of course you do! </p>
 
