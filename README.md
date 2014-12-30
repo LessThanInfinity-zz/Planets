@@ -27,5 +27,5 @@
 
 <p>Feel like trying it out? Of course you do! </p>
 
-<a href="http://www.darshanshakya.com/planets">Blow up some perfectly circular planets</p>
+<a href="http://www.darshanshakya.com/planets" targe="_blank">Blow up some perfectly circular planets</p>
 
