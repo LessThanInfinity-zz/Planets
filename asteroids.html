@@ -1,0 +1,85 @@
+<html>
+<head>
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Fonts from Font Awsome -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+   <!-- Magnific popup -->
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <!-- Stylesheet for the game itself -->
+  <link rel='stylesheet' type='text/css' href='overlord.css' />
+
+
+</head>
+
+<body>
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-12 text-center'>
+        <h2>PLANETS: AN ASTEROIDS CLONE</h2>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-12'>
+        <div id ='canvasDiv'>
+        <canvas id="canvas" width="1250" height="600"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class='container'>
+    <div class='row'>
+      <div class='col-md-12 col-sm-12 text-center'>
+        <div class='col-md-4 col-sm-4 text-center'>
+          <p> <i class='fa fa-arrow-up keyContainer'></i> Accelerate </p>
+        </div>
+
+        <div class='col-md-4 col-sm-4 text-center'>
+          <p><i class='fa fa-arrow-left keyContainer'></i> <i class='fa fa-arrow-right keyContainer'></i> Steer Left/Right</p>
+        </div>
+
+        <div class='col-md-4 col-sm-4 text-center'>
+          <span class='keyContainer'>SPACE</span> Fire Cannon
+        </div>
+      </div>
+    </div>
+
+    <div class='row'>
+      <div class='col-md-12 text-center'>
+        <p>Refresh or hit Enter to restart.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="keymaster.js"></script>
+  <script src="library.js"></script>
+  <script src="game.js"></script>
+  <script src="movingObject.js"></script>
+  <script src="asteroid.js"></script>
+  <script src="bullet.js"></script>
+  <script src="ship.js"></script>
+  <script src="game.js"></script>
+  <script src="score.js"></script>
+
+  <script>
+    var test = new Asteroids(); 
+
+    $(document).on('keypress', function(event){
+      if (event.which==13){
+        console.log('enter pressed.');
+        location.reload();
+      }
+    })
+  </script>
+
+</body>
+
+</html>
